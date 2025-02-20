@@ -1,0 +1,352 @@
+[
+    {
+        "title": "Avatar",
+        "release_year": "2009-12-10",
+        "director": "James Cameron",
+        "box_office": "$2.923 billion[5]",
+        "country": "Unknown"
+    },
+    {
+        "title": "Avengers: Endgame",
+        "release_year": "2019-04-22",
+        "director": "Anthony RussoJoe Russo",
+        "box_office": "$2.799billion[4]",
+        "country": "United States"
+    },
+    {
+        "title": "Avatar: The Way of Water",
+        "release_year": "2022-12-06",
+        "director": "James Cameron",
+        "box_office": "$2.320 billion[4][5]",
+        "country": "United States"
+    },
+    {
+        "title": "Titanic",
+        "release_year": "1997-11-01",
+        "director": "James Cameron",
+        "box_office": "$2.264 billion[7]",
+        "country": "United States"
+    },
+    {
+        "title": "Star Wars: The Force Awakens",
+        "release_year": "2015-12-14",
+        "director": "J. J. Abrams",
+        "box_office": "$2.07billion[3]",
+        "country": "United States"
+    },
+    {
+        "title": "Avengers: Infinity War",
+        "release_year": "2018-04-23",
+        "director": "Anthony RussoJoe Russo",
+        "box_office": "$2.052 billion[4]",
+        "country": "United States"
+    },
+    {
+        "title": "Spider-Man: No Way Home",
+        "release_year": "2021-12-13",
+        "director": "Jon Watts",
+        "box_office": "$1.953 billion[3][4]",
+        "country": "United States"
+    },
+    {
+        "title": "Ne Zha 2",
+        "release_year": "2025-01-29",
+        "director": "Jiaozi",
+        "box_office": "US$1.72 billion[2][3]",
+        "country": "China"
+    },
+    {
+        "title": "Inside Out 2",
+        "release_year": "2024-06-10",
+        "director": "Kelsey Mann",
+        "box_office": "$1.699 billion[3][4]",
+        "country": "United States"
+    },
+    {
+        "title": "Jurassic World",
+        "release_year": "2015-05-29",
+        "director": "Colin Trevorrow",
+        "box_office": "$1.671 billion[4]",
+        "country": "United States"
+    },
+    {
+        "title": "The Lion King",
+        "release_year": "2019-07-09",
+        "director": "Jon Favreau",
+        "box_office": "$1.657 billion[5]",
+        "country": "United States"
+    },
+    {
+        "title": "The Avengers",
+        "release_year": "2012-04-11",
+        "director": "Joss Whedon",
+        "box_office": "$1.521 billion[4]",
+        "country": "United States"
+    },
+    {
+        "title": "Furious 7",
+        "release_year": "2015-04-01",
+        "director": "James Wan",
+        "box_office": "$1.515 billion[4]",
+        "country": "Unknown"
+    },
+    {
+        "title": "Top Gun: Maverick",
+        "release_year": "2022-04-28",
+        "director": "Joseph Kosinski",
+        "box_office": "$1.496 billion[4][5]",
+        "country": "United States"
+    },
+    {
+        "title": "Frozen 2",
+        "release_year": "2019-11-07",
+        "director": "Chris Buck, Jennifer Lee",
+        "box_office": "$1.453billion",
+        "country": "United States"
+    },
+    {
+        "title": "Barbie",
+        "release_year": "2023-07-09",
+        "director": "Greta Gerwig",
+        "box_office": "$1.446 billion[6][7]",
+        "country": "Unknown"
+    },
+    {
+        "title": "Avengers: Age of Ultron",
+        "release_year": "2015-04-13",
+        "director": "Joss Whedon",
+        "box_office": "$1.405 billion[4]",
+        "country": "United States"
+    },
+    {
+        "title": "The Super Mario Bros. Movie",
+        "release_year": "2023-04-01",
+        "director": "Aaron Horvath, Michael Jelenic",
+        "box_office": "$1.360 billion[3][4]",
+        "country": "United States"
+    },
+    {
+        "title": "Black Panther",
+        "release_year": "2018-01-29",
+        "director": "Ryan Coogler",
+        "box_office": "$1.35 billion[4]",
+        "country": "United States"
+    },
+    {
+        "title": "Harry Potter and the Deathly Hallows – Part 2",
+        "release_year": "2011-07-07",
+        "director": "David Yates",
+        "box_office": "$1.342 billion[4]",
+        "country": "Unknown"
+    },
+    {
+        "title": "Deadpool & Wolverine",
+        "release_year": "2024-07-22",
+        "director": "Shawn Levy",
+        "box_office": "$1.338 billion[3][4]",
+        "country": "United States"
+    },
+    {
+        "title": "Star Wars: The Last Jedi",
+        "release_year": "2017-12-09",
+        "director": "Rian Johnson",
+        "box_office": "$1.334billion[3]",
+        "country": "United States"
+    },
+    {
+        "title": "Jurassic World: Fallen Kingdom",
+        "release_year": "2018-05-21",
+        "director": "J. A. Bayona",
+        "box_office": "$1.31 billion[7]",
+        "country": "Unknown"
+    },
+    {
+        "title": "Frozen",
+        "release_year": "2013-11-19",
+        "director": "Chris Buck, Jennifer Lee",
+        "box_office": "$1.280 billion[7]",
+        "country": "United States"
+    },
+    {
+        "title": "Beauty and the Beast",
+        "release_year": "2017-02-23",
+        "director": "Bill Condon",
+        "box_office": "$1.266billion[3]",
+        "country": "United States"
+    },
+    {
+        "title": "Incredibles 2",
+        "release_year": "2018-06-05",
+        "director": "Brad Bird",
+        "box_office": "$1.243 billion[4]",
+        "country": "United States"
+    },
+    {
+        "title": "The Fate of the Furious",
+        "release_year": "2017-04-04",
+        "director": "F. Gary Gray",
+        "box_office": "$1.236 billion[5]",
+        "country": "Unknown"
+    },
+    {
+        "title": "Iron Man 3",
+        "release_year": "2013-04-14",
+        "director": "Shane Black",
+        "box_office": "$1.266 billion[3]",
+        "country": "United States"
+    },
+    {
+        "title": "Minions",
+        "release_year": "2015-06-11",
+        "director": "Pierre Coffin, Kyle Balda",
+        "box_office": "$1.159 billion[4]",
+        "country": "United States"
+    },
+    {
+        "title": "Captain America: Civil War",
+        "release_year": "2016-04-12",
+        "director": "Anthony RussoJoe Russo",
+        "box_office": "$1.155billion[4]",
+        "country": "United States"
+    },
+    {
+        "title": "Aquaman",
+        "release_year": "2018-11-26",
+        "director": "James Wan",
+        "box_office": "$1.152 billion[7]",
+        "country": "United States"
+    },
+    {
+        "title": "The Lord of the Rings: The Return of the King",
+        "release_year": "2003-12-01",
+        "director": "Peter Jackson",
+        "box_office": "$1.151 billion[4]",
+        "country": "Unknown"
+    },
+    {
+        "title": "Spider-Man: Far From Home",
+        "release_year": "2019-06-26",
+        "director": "Jon Watts",
+        "box_office": "$1.133 billion[3]",
+        "country": "United States"
+    },
+    {
+        "title": "Captain Marvel",
+        "release_year": "2019-02-27",
+        "director": "Anna BodenRyan Fleck",
+        "box_office": "$1.131 billion[4]",
+        "country": "United States"
+    },
+    {
+        "title": "Transformers: Dark of the Moon",
+        "release_year": "2011-06-23",
+        "director": "Michael Bay",
+        "box_office": "$1.124 billion[7]",
+        "country": "United States"
+    },
+    {
+        "title": "Skyfall",
+        "release_year": "2012-10-23",
+        "director": "Sam Mendes",
+        "box_office": "$1.109 billion[5]",
+        "country": "Unknown"
+    },
+    {
+        "title": "Transformers: Age of Extinction",
+        "release_year": "2014-06-19",
+        "director": "Michael Bay",
+        "box_office": "$1.104 billion[4]",
+        "country": "United States"
+    },
+    {
+        "title": "The Dark Knight Rises",
+        "release_year": "2012-07-16",
+        "director": "Christopher Nolan",
+        "box_office": "$1.115 billion[4]",
+        "country": "Unknown"
+    },
+    {
+        "title": "Joker",
+        "release_year": "2019-08-31",
+        "director": "Todd Phillips",
+        "box_office": "$1.079 billion[2][3]",
+        "country": "United States"
+    },
+    {
+        "title": "Star Wars: The Rise of Skywalker",
+        "release_year": "2019-12-16",
+        "director": "J. J. Abrams",
+        "box_office": "$1.077 billion[3]",
+        "country": "United States"
+    },
+    {
+        "title": "Toy Story 4",
+        "release_year": "2019-06-11",
+        "director": "Josh Cooley",
+        "box_office": "$1.074 billion[3]",
+        "country": "United States"
+    },
+    {
+        "title": "Toy Story 3",
+        "release_year": "2010-06-12",
+        "director": "Lee Unkrich",
+        "box_office": "$1.067 billion[1]",
+        "country": "United States"
+    },
+    {
+        "title": "Pirates of the Caribbean: Dead Man's Chest",
+        "release_year": "2006-06-24",
+        "director": "Gore Verbinski",
+        "box_office": "$1.066 billion[2]",
+        "country": "United States"
+    },
+    {
+        "title": "Rogue One: A Star Wars Story",
+        "release_year": "2016-12-10",
+        "director": "Gareth Edwards",
+        "box_office": "$1.059 billion[5]",
+        "country": "United States"
+    },
+    {
+        "title": "Aladdin",
+        "release_year": "2019-05-08",
+        "director": "Guy Ritchie",
+        "box_office": "$1.054 billion[6]",
+        "country": "United States"
+    },
+    {
+        "title": "Moana 2",
+        "release_year": "2024-11-21",
+        "director": "David Derrick Jr., [1], [1], [1]",
+        "box_office": "$1.05 billion[5][6]",
+        "country": "United States"
+    },
+    {
+        "title": "Star Wars: Episode I – The Phantom Menace",
+        "release_year": "1999-05-16",
+        "director": "George Lucas",
+        "box_office": "$1.047 billion[3][4]",
+        "country": "United States"
+    },
+    {
+        "title": "Pirates of the Caribbean: On Stranger Tides",
+        "release_year": "2011-05-07",
+        "director": "Rob Marshall",
+        "box_office": "$1.046 billion[3]",
+        "country": "United States"
+    },
+    {
+        "title": "Jurassic Park",
+        "release_year": "1993-06-09",
+        "director": "Steven Spielberg",
+        "box_office": "$1.058 billion[4]",
+        "country": "United States"
+    },
+    {
+        "title": "Despicable Me 3",
+        "release_year": "2017-06-14",
+        "director": "Pierre Coffin, Kyle Balda",
+        "box_office": "$1.035billion[5]",
+        "country": "United States"
+    }
+]
