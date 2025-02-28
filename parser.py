@@ -3,6 +3,7 @@ import sqlite3
 import json
 from bs4 import BeautifulSoup
 import time
+import re
 
 # URL страницы Википедии
 URL = "https://en.wikipedia.org/wiki/List_of_highest-grossing_films"
@@ -85,6 +86,18 @@ for row in rows:
 if not data:
     print("Ошибка: данные о фильмах не были собраны!")
     exit()
+
+
+
+def clean_box_office(value):
+    if value == "Unknown":
+        return value
+    value = re.sub(r"\[.*?\]", "", value)  # Убираем ссылки [4], [5] и т. д.
+    value = re.sub(r"(\d)(?=[mbMB])", r"\1 ", value)  # Добавляем пробел перед billion/million, если его нет
+    return value.strip()
+
+# Очистка данных перед сохранением
+data = [(title, release_year, director, clean_box_office(box_office), country) for title, release_year, director, box_office, country in data]
 
 # Подключение к SQLite
 conn = sqlite3.connect("films.db")
