@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List of highest grossing movies</title>
+    <title>Highest Grossing Movies</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Highest grossing movies</h1>
-    <input type="text" id="search" placeholder="Search by name...">
+    <h1>🎬 Highest Grossing Movies</h1>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Type movie name...">
+        <button id="search-btn">Search</button>
+    </div>
+
     <table>
         <thead>
             <tr>
                 <th>Name</th>
-                <th>Release year</th>
+                <th>Release Year</th>
                 <th>Director</th>
-                <th>Box offcie revenue</th>
+                <th>Box Office Revenue</th>
                 <th>Country of Origin</th>
             </tr>
         </thead>
         <tbody id="films-table"></tbody>
     </table>
+
     <script src="script.js"></script>
 </body>
 </html>

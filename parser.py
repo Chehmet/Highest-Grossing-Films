@@ -5,24 +5,22 @@ from bs4 import BeautifulSoup
 import time
 import re
 
-# URL страницы Википедии
+
 URL = "https://en.wikipedia.org/wiki/List_of_highest-grossing_films"
 
-# Получаем HTML страницы
 response = requests.get(URL)
 if response.status_code != 200:
-    print("Ошибка запроса к Википедии:", response.status_code)
+    print("-----------------Error requesting wiki:", response.status_code)
     exit()
 
 soup = BeautifulSoup(response.text, "html.parser")
 
-# Находим таблицу с фильмами
 films_table = soup.find("table", class_="wikitable")
 if not films_table:
-    print("Ошибка: таблица не найдена!")
+    print("---------------Error, no table found-------------------")
     exit()
 
-rows = films_table.find_all("tr")[1:]  # Пропускаем заголовок
+rows = films_table.find_all("tr")[1:] 
 
 data = []
 
@@ -41,15 +39,13 @@ for row in rows:
     print(f"Парсим {title} -> {film_url}")
 
     try:
-        # Получаем данные с отдельной страницы фильма
         film_response = requests.get(film_url)
         film_soup = BeautifulSoup(film_response.text, "html.parser")
         
-        # Извлекаем год выпуска
+
         year_tag = film_soup.find("span", class_="bday")
         release_year = year_tag.get_text(strip=True) if year_tag else "Unknown"
 
-        # Извлекаем режиссера
         director_tag = film_soup.find("th", string="Directed by")
         director = "Unknown"
         if director_tag:
@@ -57,14 +53,12 @@ for row in rows:
             if director_data:
                 director = ", ".join([a.get_text(strip=True) for a in director_data.find_all("a")]) or director_data.get_text(strip=True)
 
-        # Извлекаем кассовые сборы
         box_office_tag = film_soup.find("th", string="Box office")
         box_office = "Unknown"
         if box_office_tag:
             box_office_data = box_office_tag.find_next_sibling("td")
             box_office = box_office_data.get_text(strip=True) if box_office_data else "Unknown"
 
-        # Извлекаем страну
         country_tag = film_soup.find("th", string="Country")
         country = "Unknown"
         if country_tag:
@@ -77,14 +71,13 @@ for row in rows:
         data.append((title, release_year, director, box_office, country))
     
     except Exception as e:
-        print(f"Ошибка при обработке {title}: {e}")
+        print(f"Error while proccessing {title}: {e}")
 
-    # Даем передышку серверу Википедии
     time.sleep(1)
 
-# Проверяем, есть ли данные
+
 if not data:
-    print("Ошибка: данные о фильмах не были собраны!")
+    print("Error in collecting data, no movies found!")
     exit()
 
 
@@ -92,18 +85,15 @@ if not data:
 def clean_box_office(value):
     if value == "Unknown":
         return value
-    value = re.sub(r"\[.*?\]", "", value)  # Убираем ссылки [4], [5] и т. д.
-    value = re.sub(r"(\d)(?=[mbMB])", r"\1 ", value)  # Добавляем пробел перед billion/million, если его нет
+    value = re.sub(r"\[.*?\]", "", value)  
+    value = re.sub(r"(\d)(?=[mbMB])", r"\1 ", value)  
     return value.strip()
 
-# Очистка данных перед сохранением
 data = [(title, release_year, director, clean_box_office(box_office), country) for title, release_year, director, box_office, country in data]
 
-# Подключение к SQLite
 conn = sqlite3.connect("films.db")
 cursor = conn.cursor()
 
-# Создаем таблицу
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS films (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -115,14 +105,12 @@ CREATE TABLE IF NOT EXISTS films (
 )
 """)
 
-# Заполняем базу данных
 cursor.executemany("INSERT INTO films (title, release_year, director, box_office, country) VALUES (?, ?, ?, ?, ?)", data)
 
 conn.commit()
 conn.close()
 
-# Экспортируем данные в JSON
 with open("films.json", "w", encoding="utf-8") as f:
     json.dump([{"title": d[0], "release_year": d[1], "director": d[2], "box_office": d[3], "country": d[4]} for d in data], f, indent=4, ensure_ascii=False)
 
-print("Данные успешно сохранены в films.db и films.json")
+print("Movies are saved in films.db and films.json")
