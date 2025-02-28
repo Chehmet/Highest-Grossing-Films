@@ -103,3 +103,26 @@ tr:hover {
     background: #dfe6e9;
     transition: 0.3s;
 }
+
+th {
+    background: #2c3e50;
+    color: white;
+    padding: 14px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+    user-select: none;
+}
+
+th:hover {
+    background: #34495e;
+}
+
+.sort-icon {
+    font-size: 0.9em;
+    margin-left: 5px;
+    display: inline-block;
+    opacity: 0.6;
+}
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,15 +17,17 @@
     <table>
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Release Year</th>
-                <th>Director</th>
-                <th>Box Office Revenue</th>
-                <th>Country of Origin</th>
+                <th data-column="title" data-order="desc">Name <span class="sort-icon"></span></th>
+                <th data-column="release_year" data-order="desc">Release Year <span class="sort-icon"></span></th>
+                <th data-column="director" data-order="desc">Director <span class="sort-icon"></span></th>
+                <th data-column="box_office" data-order="desc">Box Office Revenue <span class="sort-icon"></span></th>
+                <th data-column="country" data-order="desc">Country of Origin <span class="sort-icon"></span></th>
             </tr>
         </thead>
         <tbody id="films-table"></tbody>
     </table>
+
+    <p id="error-message" class="hidden">No movies found.</p>
 
     <script src="script.js"></script>
 </body>
